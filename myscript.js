@@ -5,7 +5,7 @@ const userNumber= prompt('Insert a number');
 console.log(userNumber);
 
 for(
-    let i=1; i<10; i= i+1) {
+    let i=1; i<=10; i= i+1) {
         const userNumber= prompt('Insert a number');
         
         const li= document.createElement('li');
