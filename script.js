@@ -1,21 +1,13 @@
-/*Crea un array vuoto.*/
-
-let array=[];
-/*Chiedi per 6 volte all’utente di inserire un numero*/
+/*Chiedi un numero di 4 cifre all’utente*/
 
 
-for(i=0; i<6; i= i+1){
-    let userNumber= parseInt(prompt('Insert a number'));
+const userNumber= parseInt(prompt('Insert a 4 digits number'));
+/*calcola la somma di tutte le cifre che compongono il numero.*/
 
-    /*se è dispari inseriscilo nell’array.*/
+let sum=0;
 
-    if(userNumber % 2 !== 0){
-        array.push(userNumber);
-    }
-    console.log(array);
+for(i=0; i<userNumber.lenght; i= i+1){
+    sum= sum+ userNumber;
+    onkeyup=sum(userNumber[i] + userNumber [i]);
+    console.log(sum);
 }
-
-
-
-
-
