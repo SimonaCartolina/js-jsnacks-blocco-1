@@ -1,30 +1,21 @@
-/*In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby, */
+/*Crea un array vuoto.*/
 
-/*chiedi all’utente il suo nome*/
-
-
-const guessList=['simona cartolina', 'dennis margiotta', 'federica asaro', 'manuela pecoraro', 'federica scavone', 'serena rando mazarino'];
-console.log(guessList);
-const userName= prompt('Insert your name');
+let array=[];
+/*Chiedi per 6 volte all’utente di inserire un numero*/
 
 
-let nameFounded = false;
+for(i=0; i<6; i= i+1){
+    let userNumber= parseInt(prompt('Insert a number'));
 
+    /*se è dispari inseriscilo nell’array.*/
 
-
-
-/*e comunicagli se può partecipare o no alla festa*/
-
-for( let i=0; i < guessList.length; i= i+1 ){
-    if(guessList[i] === userName){
-        nameFounded = true;
+    if(userNumber % 2 !== 0){
+        array.push(userNumber);
     }
+    console.log(array);
 }
 
-if(nameFounded){
-    console.log('Welcome');
-}
-else{
-    console.log('Access denied');
-}
+
+
+
 
